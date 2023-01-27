@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Nourish - with automated build trigger configuration</title>
+<title>Nourish</title>
 <link rel="icon" type="img/leafy.png" href="img/leafy.png">
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <meta charset="ISO-8859-1">
