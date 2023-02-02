@@ -1,15 +1,15 @@
 pipeline {
   agent any
   tools {
-    maven 'Maven 3.8.6'
+    maven 'maven-3.8.6'
   }
   stages {
     stage ('Build') {
       steps {
         sh 'mvn clean install' // clean and install
+        }
       }
-      }
-    }
+    
     stage ('Deploy') {
       steps {
         script {
@@ -17,4 +17,6 @@ pipeline {
         }
       }
     }
+  }
 }
+
