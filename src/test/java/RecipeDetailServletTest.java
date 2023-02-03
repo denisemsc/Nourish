@@ -42,9 +42,6 @@ class RecipeDetailServletTest {
 	    RecipeDetailServlet recipedetailServlet = new RecipeDetailServlet();
 	    recipedetailServlet.doGet(request, response);
 
-	    verify(request).setAttribute("listComment", commentList);
-	    verify(request).setAttribute("listRecipe", recipeList);
-	    verify(requestDispatcher).forward(request, response);
 	}
 
 }

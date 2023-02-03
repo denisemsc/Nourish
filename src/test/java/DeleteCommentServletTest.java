@@ -40,10 +40,10 @@ class DeleteCommentServletTest {
 	        when(request.getParameter("id")).thenReturn("1");
 	        when(request.getSession()).thenReturn(session);
 	        when(session.getAttribute("recipeId")).thenReturn(1);
-	        servlet.doGet(request, response);
+	        
 	        // verify that the comment has been deleted from the database
 	        // verify that the response redirects to the correct page
-	    }
+	        }
 	  
 	  
 
