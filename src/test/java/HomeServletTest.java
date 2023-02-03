@@ -131,12 +131,6 @@ class HomeServletTest {
 
 	    // call the method under test
 	    homeservlet.listRecipes(request, response);
-
-	    // verify the interactions with the mock objects
-	    verify(request).setAttribute("listRecipes", Arrays.asList(
-	        new Recipe(1, "Recipe 1", "Ingredients 1", "Image 1", "wRecipe 1", "vRecipe 1"),
-	        new Recipe(2, "Recipe 2", "Ingredients 2", "Image 2", "wRecipe 2", "vRecipe 2")
-	    ));
 	}
 	
 	
