@@ -61,7 +61,8 @@ public class UserServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.getWriter().append("Served at: ");
+		request.getContextPath();;
 
 		String action = request.getServletPath();
 		try {
@@ -86,7 +87,7 @@ public class UserServlet extends HttpServlet {
 	
 	// listUser function to connect to the database and retrieve the user's record
 		// and display in the profile.jsp
-		private void listUser(HttpServletRequest request, HttpServletResponse response)
+		void listUser(HttpServletRequest request, HttpServletResponse response)
 				throws SQLException, IOException, ServletException {
 
 			HttpSession session = request.getSession();
