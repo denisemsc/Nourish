@@ -4,11 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Changing to custom workspace...'
-                dir('C:\DVOPS\pipeline2') {
-                    echo 'Building...'
-                    sh 'mvn clean install'
-                }
+                sh 'mvn clean install'
             }
         }
         stage('Test') {
